@@ -240,6 +240,116 @@ textarea {
     visibility: visible;
     pointer-events: auto;
 }
+.mobile-menu-container {
+    position: relative;
+    padding-top: 72px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+ 
+}
+.mobile-menu-close {
+    position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 24px;
+        right: 24px;
+        width: 24px;
+        height: 24px;
+        margin-bottom: 24px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 0;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu-close:hover, 
+.mobile-menu-close:focus {
+        background-color: #404bbf;
+        border: none;
+}
+.mobile-menu-close:hover, 
+.modal-close-btn:focus .modal-close-icon {
+    fill: #ffffff;
+}
+
+.mobile-menu-nav {
+     margin-bottom: auto;
+}
+.mobile-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.mobile-menu-link {
+    font-weight: 700;
+        font-size: 32px;
+            line-height: 1.1;
+            letter-spacing: 0.02em;
+            color: #2e2f42;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            display: block;
+        
+        }
+        
+        .mobile-menu-link:hover,
+        .mobile-menu-link:focus {
+            color: #404bbf;
+        }
+        
+        .mobile-menu-link:active {
+            color: #404bbf;
+      
+        }
+.mobile-adress-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 48px;
+}
+.mobile-adress-info {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-adress-info:hover, 
+.mobile-adress-info:focus {
+    color: #404bbf;
+}
+
+.mobile-socialmedia-link-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.mobile-socialmedia-link-list-item {
+    width: 40px;
+    height: 40px;
+}
+
+.mobile-socialmedia-link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #f4f4fd;
+}
+
+.mobile-ocialmedia-link:hover,
+.mobile-socialmedia-link:focus {
+    background-color: #404bbf;
+}
+
 @media screen and (min-width: 768px) {
     .mobile-menu {
         display: none;
