@@ -121,31 +121,10 @@
   margin-right: 120px;
   margin-left: 0;
 }
-.footer-logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #4d5ae5;
-  display: inline-block;
-  margin-bottom: 16px;
-}
-.text-part-footer {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #f4f4fd;
-}
+
+
 .footer-descr {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #f4f4fd;
+
   max-width: 264px;
 }
 .social-media-container {
@@ -155,60 +134,19 @@
 .subscribe-div {
   margin-left: 80px;
 }
-.subscribe-text {
-  margin-bottom: 16px;
-  font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #fff;
-}
+
 .subscribe-form {
   display: flex;
   gap: 24px;
 }
 .subscribe-email {
-  background-color: transparent;
-  border: 1px solid #fff;
     width: 264px;
-    height: 40px;
-    font-size: 12px;
-    line-height: 2;
-    letter-spacing: 0.04em;
-    padding-left: 16px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    color: #ffffff;
 }
-.subscribe-email::placeholder {
-  color: #ffffff;
-}
+
 .subscribe-btn {
-  font-family: "Roboto", sans-serif;
-  display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    cursor: pointer;
-    border: none;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    border-radius: 4px;
-      padding: 8px 24px;
       min-width: 165px;
-      height: 40px;
-      background: #4d5ae5;
-      color: #ffffff;
 }
-.subscribe-icon {
-  margin-left: 16px;
-}
-.subscribe-btn:hover, 
-.subscribe-btn:focus {
-  background-color: #31d0aa;
-}
+
 
 /* =========== /Footer Section =========== */
 /* =========== Modal Section =========== */
