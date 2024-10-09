@@ -1092,6 +1092,7 @@ textarea {
 }
 
 .ptivate-policy-accept {
+    display: flex;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -1110,7 +1111,7 @@ textarea {
     justify-content: center;
     fill: transparent;
     margin-right: 8px;
-    
+    flex-shrink: 0;
 }
 
 .checkbox-input:checked+.ptivate-policy-accept>.user-privacy-checkbox {
