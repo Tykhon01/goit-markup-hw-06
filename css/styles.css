@@ -184,6 +184,8 @@ textarea {
             background-color: #404bbf;
             }
         .adress {
+            font-weight: 400;
+            font-style: normal;
             font-size: normal;
             display: block;
             }
@@ -214,6 +216,7 @@ textarea {
             margin-right: 76px;
         }
         .adress {
+            font-weight: 500;
             font-size: 16px;
             line-height: 1.5;
             letter-spacing: 0.02em;
@@ -243,6 +246,7 @@ textarea {
     height: 100%;
     background-color: #ffffff;
     opacity: 0;
+    z-index: 999;
     visibility: hidden;
     pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -299,24 +303,26 @@ textarea {
 }
 .mobile-menu-link {
     font-weight: 700;
-        font-size: 32px;
-            line-height: 1.1;
-            letter-spacing: 0.02em;
-            color: #2e2f42;
-            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-            display: block;
+    font-size: 32px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
         
-        }
+}
+.mobile-menu-link:hover.mobile-menu-link:focus {
+    color: #404bbf;
+}
         
-        .mobile-menu-link:hover,
-        .mobile-menu-link:focus {
-            color: #404bbf;
-        }
-        
-        .mobile-menu-link:active {
-            color: #404bbf;
+.mobile-menu-link:active {
+    color: #404bbf;
       
-        }
+}
+.mobile-menu-link.current {
+    position: relative;
+    color: #404bbf;
+}
 .mobile-adress-list {
     display: flex;
     flex-direction: column;
@@ -334,7 +340,13 @@ textarea {
 .mobile-adress-info:focus {
     color: #404bbf;
 }
-
+.mobile-adress-info.current {
+    position: relative;
+    color: #404bbf;
+}
+.mobile-adress-item {
+    font-style: normal;
+}
 .mobile-socialmedia-link-list {
     display: flex;
     justify-content: center;
@@ -491,6 +503,13 @@ textarea {
     color: #2e2f42;
     margin-bottom: 8px;
 }
+.benefits-list-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
 @media screen and (min-width: 768px) {
     .benefits-list {
        gap: 72px 24px;
@@ -498,6 +517,9 @@ textarea {
     }
     .benefits-list-item {
         width: calc((100% - 24px) / 2);
+    }
+    .benefits-list-title {
+        text-align: left;
     }
 }
 @media screen and (min-width: 1158px) {
@@ -516,17 +538,13 @@ textarea {
                     font-size: 20px;
                     line-height: 1.2;
                     letter-spacing: 0.02em;
-                    text-align: left;
                     color: #2e2f42;
                     margin-bottom: 8px;
                     
                 }
         
                 .benefits-list-text {
-                    font-size: 16px;
-                    line-height: 1.5;
-                    letter-spacing: 0.02em;
-                    color: #434455;
+                    font-weight: 400;
                     min-width: 264px;
                 }
     .benefits-list {
@@ -544,7 +562,7 @@ textarea {
 /* =========== OUR TEAM SECTION =========== */
 .our-team {
     background: #f4f4fd;
-    padding: 96px 16px;
+    padding: 96px 0;
 }
 .our-team-header {
     font-weight: 700;
@@ -636,8 +654,11 @@ textarea {
 /* =========== /OUR TEAM SECTION =========== */
 
 /* =========== OUR PORTFOLIO SECTION =========== */
+.our-portfolio {
+    padding: 96px 0;
+}
 .portfolio-container {
-    padding: 96px 16px;
+    padding: 0 16px;
 }
 .our-portfolio-header {
     font-size: 36px;
@@ -728,13 +749,14 @@ textarea {
 
 /* =========== FOOTER SECTION =========== */
 .page-footer {
+    padding: 96px 0;
     background: #2e2f42;
 }
 .footer-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 96px 0;
+    padding: 0 16px;
 }
 .logo-container {
     display: flex;
@@ -896,6 +918,10 @@ textarea {
     }
     .subscribe-form {
         flex-direction: row;
+        gap: 24px;
+    }
+    .subscribe-email {
+        width: 264px;
     }
 }
 @media screen and (min-width: 1158px) {
@@ -912,10 +938,14 @@ textarea {
     .logo-container {
         margin-right: 120px;
         margin-left: 0;
+        margin-bottom: 0;
           }
     .footer-descr {
         max-width: 264px;
         }
+    .social-media-container {
+        margin-bottom: 0;
+    }
     .subscribe-div {
         margin-left: 80px;
         }
